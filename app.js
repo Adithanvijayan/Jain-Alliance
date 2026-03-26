@@ -32,12 +32,14 @@
 
   // Filter state: { [key]: { op, val, val2 } }
   let filters = {};
+  let customDropdownDocBound = false;
 
   // ===== DOM Elements =====
   const tabBtns = document.querySelectorAll('.tab-btn');
   const searchInput = document.getElementById('search-input');
   const clearSearchBtn = document.getElementById('clear-search');
   const filterToggleBtn = document.getElementById('filter-toggle');
+  const filterToggleLabel = document.getElementById('filter-toggle-label');
   const filterPanel = document.getElementById('filter-panel');
   const filterBadge = document.getElementById('filter-badge');
   const resetFiltersBtn = document.getElementById('reset-filters');
@@ -193,6 +195,7 @@
     boysCount.textContent = boys.length;
     buildFilterUI();
     bindEvents();
+    updateFilterToggleLabel();
     render();
   }
 
@@ -209,24 +212,30 @@
       let html = `<span class="filter-row-label">${escapeHtml(def.label)}</span>`;
 
       if (def.type === 'numeric') {
-        html += `<select class="filter-operator" data-key="${def.key}">
-          <option value="">-- No filter --</option>
-          ${def.operators.map(op => `<option value="${op}">${OP_LABELS[op]}</option>`).join('')}
-        </select>`;
+        html += buildCustomDropdown(
+          'filter-operator',
+          def.key,
+          '-- No filter --',
+          def.operators.map(op => ({ value: op, label: OP_LABELS[op] }))
+        );
         html += `<input type="number" class="filter-value" data-key="${def.key}" placeholder="Value" style="display:none;">`;
         html += `<span class="filter-sep" data-key="${def.key}" style="display:none;">and</span>`;
         html += `<input type="number" class="filter-value-to" data-key="${def.key}" placeholder="To" style="display:none;">`;
       } else if (def.type === 'dropdown') {
         const vals = [...new Set(data.map(p => p[def.field]).filter(v => v && String(v).trim()))].sort();
-        html += `<select class="filter-value" data-key="${def.key}">
-          <option value="">All</option>
-          ${vals.map(v => `<option value="${escapeHtml(String(v))}">${escapeHtml(String(v))}</option>`).join('')}
-        </select>`;
+        html += buildCustomDropdown(
+          'filter-value',
+          def.key,
+          'All',
+          vals.map(v => ({ value: String(v), label: String(v) }))
+        );
       } else if (def.type === 'text') {
-        html += `<select class="filter-operator" data-key="${def.key}">
-          <option value="">-- No filter --</option>
-          ${def.operators.map(op => `<option value="${op}">${OP_LABELS[op]}</option>`).join('')}
-        </select>`;
+        html += buildCustomDropdown(
+          'filter-operator',
+          def.key,
+          '-- No filter --',
+          def.operators.map(op => ({ value: op, label: OP_LABELS[op] }))
+        );
         html += `<input type="text" class="filter-value" data-key="${def.key}" placeholder="Value" style="display:none;">`;
       }
 
@@ -237,6 +246,68 @@
 
     // Bind filter interactions
     bindFilterEvents();
+    initCustomDropdowns();
+  }
+
+  function buildCustomDropdown(inputClass, key, placeholder, options) {
+    const menuOptions = [`<button type="button" class="custom-dropdown-option selected" data-value="">${escapeHtml(placeholder)}</button>`]
+      .concat(options.map(opt => `<button type="button" class="custom-dropdown-option" data-value="${escapeHtml(opt.value)}">${escapeHtml(opt.label)}</button>`));
+
+    return `
+      <div class="custom-dropdown" data-key="${key}">
+        <button type="button" class="custom-dropdown-trigger" aria-expanded="false">
+          <span class="custom-dropdown-text">${escapeHtml(placeholder)}</span>
+          <span class="custom-dropdown-caret">▼</span>
+        </button>
+        <div class="custom-dropdown-menu">${menuOptions.join('')}</div>
+        <input type="hidden" class="custom-dropdown-input ${inputClass}" data-key="${key}" value="">
+      </div>`;
+  }
+
+  function initCustomDropdowns() {
+    const dropdowns = filterRowsContainer.querySelectorAll('.custom-dropdown');
+
+    dropdowns.forEach(dropdown => {
+      const trigger = dropdown.querySelector('.custom-dropdown-trigger');
+      const label = dropdown.querySelector('.custom-dropdown-text');
+      const input = dropdown.querySelector('.custom-dropdown-input');
+      const options = dropdown.querySelectorAll('.custom-dropdown-option');
+
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = dropdown.classList.contains('open');
+        closeAllCustomDropdowns();
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          trigger.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      options.forEach(option => {
+        option.addEventListener('click', () => {
+          const value = option.dataset.value || '';
+          input.value = value;
+          label.textContent = option.textContent;
+          options.forEach(o => o.classList.remove('selected'));
+          option.classList.add('selected');
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+          closeAllCustomDropdowns();
+        });
+      });
+    });
+
+    if (!customDropdownDocBound) {
+      document.addEventListener('click', closeAllCustomDropdowns);
+      customDropdownDocBound = true;
+    }
+  }
+
+  function closeAllCustomDropdowns() {
+    filterRowsContainer.querySelectorAll('.custom-dropdown.open').forEach(dropdown => {
+      dropdown.classList.remove('open');
+      const trigger = dropdown.querySelector('.custom-dropdown-trigger');
+      if (trigger) trigger.setAttribute('aria-expanded', 'false');
+    });
   }
 
   function bindFilterEvents() {
@@ -271,7 +342,7 @@
 
     // Value changes
     filterRowsContainer.querySelectorAll('.filter-value, .filter-value-to').forEach(input => {
-      const eventType = input.tagName === 'SELECT' ? 'change' : 'input';
+      const eventType = (input.type === 'hidden') ? 'change' : 'input';
       let debounceTimer;
       input.addEventListener(eventType, () => {
         clearTimeout(debounceTimer);
@@ -287,7 +358,7 @@
       btn.addEventListener('click', () => {
         const key = btn.dataset.key;
         const row = btn.closest('.filter-row');
-        row.querySelectorAll('select').forEach(s => s.value = '');
+        row.querySelectorAll('.custom-dropdown').forEach(dropdown => resetCustomDropdown(dropdown));
         row.querySelectorAll('input').forEach(i => { i.value = ''; i.style.display = 'none'; });
         const sep = row.querySelector('.filter-sep');
         if (sep) sep.style.display = 'none';
@@ -296,6 +367,18 @@
         render();
       });
     });
+  }
+
+  function resetCustomDropdown(dropdown) {
+    const input = dropdown.querySelector('.custom-dropdown-input');
+    const label = dropdown.querySelector('.custom-dropdown-text');
+    const options = dropdown.querySelectorAll('.custom-dropdown-option');
+    const first = options[0];
+    if (!input || !label || !first) return;
+    input.value = '';
+    label.textContent = first.textContent;
+    options.forEach(o => o.classList.remove('selected'));
+    first.classList.add('selected');
   }
 
   function updateFilterState() {
@@ -363,7 +446,7 @@
 
     filterToggleBtn.addEventListener('click', () => {
       filterPanel.classList.toggle('open');
-      filterToggleBtn.classList.toggle('active');
+      updateFilterToggleLabel();
     });
 
     resetFiltersBtn.addEventListener('click', resetAll);
@@ -384,6 +467,11 @@
     const count = Object.keys(filters).length;
     filterBadge.style.display = count > 0 ? 'inline-block' : 'none';
     filterBadge.textContent = count;
+  }
+
+  function updateFilterToggleLabel() {
+    if (!filterToggleLabel) return;
+    filterToggleLabel.textContent = filterPanel.classList.contains('open') ? 'Close Filters' : 'Open Filters';
   }
 
   // ===== Filter & Search Logic =====
