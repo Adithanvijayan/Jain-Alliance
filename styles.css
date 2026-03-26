@@ -245,7 +245,8 @@ body.boys-active #search-input:focus {
 
 .filter-panel.open {
   max-height: 2000px;
-  overflow-y: auto;
+  overflow-y: visible;
+  overflow-x: visible;
   padding-top: 0.75rem;
   padding-bottom: 0.5rem;
 }
@@ -481,6 +482,30 @@ body.boys-active #search-input:focus {
   margin: 0.75rem auto 0;
   padding: 0 1rem;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.print-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.9rem;
+  border: 1.5px solid var(--gray-200);
+  border-radius: 20px;
+  background: var(--white);
+  color: var(--gray-600);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.print-btn:hover {
+  border-color: var(--active-color);
+  color: var(--active-color);
+  background: var(--active-bg);
 }
 
 #results-count {
@@ -772,6 +797,14 @@ body.boys-active #search-input:focus {
     width: 100%;
   }
 
+  .filter-row input[type="text"],
+  .filter-row input[type="number"] {
+    width: 100%;
+    min-width: 0;
+    max-width: unset;
+    box-sizing: border-box;
+  }
+
   .custom-dropdown {
     width: 100%;
   }
@@ -824,4 +857,126 @@ body.boys-active #search-input:focus {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--gray-400);
+}
+
+/* ===== Print Styles ===== */
+#print-area {
+  display: none;
+}
+
+@media print {
+  @page {
+    margin: 10mm;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  body > * {
+    display: none !important;
+  }
+
+  #print-area {
+    display: block !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .print-header {
+    text-align: center;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #333;
+  }
+
+  .print-header h1 {
+    font-size: 1.3rem;
+    margin: 0 0 0.25rem;
+  }
+
+  .print-header p {
+    font-size: 0.8rem;
+    color: #555;
+    margin: 0.15rem 0;
+  }
+
+  .print-filters {
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+    font-size: 0.75rem;
+  }
+
+  .print-filters strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .print-filters span {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .print-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .print-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem 0.6rem;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    font-size: 0.7rem;
+  }
+
+  .print-card-name {
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.2rem;
+  }
+
+  .print-card-name .new-tag-print {
+    background: #e74c3c;
+    color: #fff;
+    font-size: 0.55rem;
+    padding: 0.05rem 0.3rem;
+    border-radius: 3px;
+    margin-left: 0.3rem;
+    font-weight: 700;
+  }
+
+  .print-card-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.15rem 0.5rem;
+  }
+
+  .print-detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .print-detail-label {
+    font-size: 0.55rem;
+    font-weight: 700;
+    color: #888;
+    text-transform: uppercase;
+  }
+
+  .print-detail-value {
+    font-size: 0.7rem;
+    color: #333;
+  }
 }

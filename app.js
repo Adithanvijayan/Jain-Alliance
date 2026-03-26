@@ -423,6 +423,7 @@
         document.body.classList.toggle('boys-active', currentTab === 'boys');
         filters = {};
         buildFilterUI();
+        updateFilterBadge();
         render();
       });
     });
@@ -451,6 +452,9 @@
 
     resetFiltersBtn.addEventListener('click', resetAll);
     resetAllBtn.addEventListener('click', resetAll);
+
+    const printBtn = document.getElementById('print-btn');
+    if (printBtn) printBtn.addEventListener('click', handlePrint);
   }
 
   function resetAll() {
@@ -472,6 +476,59 @@
   function updateFilterToggleLabel() {
     if (!filterToggleLabel) return;
     filterToggleLabel.textContent = filterPanel.classList.contains('open') ? 'Close Filters' : 'Open Filters';
+  }
+
+  // ===== Print =====
+  function handlePrint() {
+    const data = getFilteredData();
+    const printArea = document.getElementById('print-area');
+    const tabLabel = currentTab === 'girls' ? 'மணமகள்' : 'மணமகன்';
+    const allFields = [...mainFields, ...secondaryFields];
+
+    // Build filter summary
+    let filterHTML = '';
+    const activeFilters = Object.entries(filters);
+    if (searchQuery || activeFilters.length > 0) {
+      filterHTML = '<div class="print-filters"><strong>Active Filters:</strong>';
+      if (searchQuery) {
+        filterHTML += '<span>Search: "' + escapeHtml(searchQuery) + '"</span>';
+      }
+      activeFilters.forEach(([key, f]) => {
+        const def = FILTER_DEFS.find(d => d.key === key);
+        if (!def) return;
+        const opLabel = OP_LABELS[f.op] || f.op;
+        let valStr = f.val || '';
+        if (f.op === 'between') valStr = (f.val || '') + ' – ' + (f.val2 || '');
+        if (f.op === 'empty' || f.op === 'notEmpty') valStr = '';
+        filterHTML += '<span>' + escapeHtml(def.label) + ': ' + escapeHtml(opLabel) + (valStr ? ' ' + escapeHtml(valStr) : '') + '</span>';
+      });
+      filterHTML += '</div>';
+    }
+
+    // Build cards
+    let cardsHTML = '';
+    data.forEach(person => {
+      const newTag = person.is_new ? '<span class="new-tag-print">NEW</span>' : '';
+      let detailsHTML = '';
+      allFields.forEach(field => {
+        if (field === 'name') return;
+        const label = displayHeaders[field] || field;
+        let value = person[field];
+        let extra = '';
+        if (field === 'dob' && person._age != null) extra = ' (' + person._age + ' yrs)';
+        if (field === 'height' && person._heightCm != null) extra = ' (' + person._heightCm + ' cm)';
+        const displayVal = value && String(value).trim() ? escapeHtml(String(value)) + extra : '—';
+        detailsHTML += '<div class="print-detail"><span class="print-detail-label">' + escapeHtml(label) + '</span><span class="print-detail-value">' + displayVal + '</span></div>';
+      });
+      cardsHTML += '<div class="print-card"><div class="print-card-name">' + escapeHtml(person.name) + ' ' + newTag + '</div><div class="print-card-details">' + detailsHTML + '</div></div>';
+    });
+
+    printArea.innerHTML =
+      '<div class="print-header"><h1>சமணத் திருமண மாலை</h1><p>' + escapeHtml(tabLabel) + ' — ' + data.length + ' profiles</p></div>' +
+      filterHTML +
+      '<div class="print-cards">' + cardsHTML + '</div>';
+
+    window.print();
   }
 
   // ===== Filter & Search Logic =====
