@@ -34,6 +34,29 @@
   let filters = {};
   let customDropdownDocBound = false;
 
+  // Sort state
+  let sortField = null;  // null = default (sheet order)
+  let sortDir = 'asc';  // 'asc' | 'desc'
+
+  // Sort definitions — field key, label, comparator data source
+  const SORT_DEFS = [
+    { key: 'isNew',      label: 'NEW Tag',      field: '_isNewLabel', type: 'text' },
+    { key: 'name',       label: 'Name',         field: 'name',        type: 'text' },
+    { key: 'age',        label: 'Age',          field: '_age',        type: 'numeric' },
+    { key: 'height',     label: 'Height',       field: '_heightCm',   type: 'numeric' },
+    { key: 'salary',     label: 'Salary',       field: '_salaryNum',  type: 'numeric' },
+    { key: 'education',  label: 'Education',    field: 'education',   type: 'text' },
+    { key: 'job',        label: 'Job',          field: 'job',         type: 'text' },
+    { key: 'living',     label: 'Location',     field: 'living',      type: 'text' },
+    { key: 'rashi',      label: 'Birth Rashi',  field: 'birth_rashi', type: 'text' },
+    { key: 'star',       label: 'Birth Star',   field: 'birth_star',  type: 'text' },
+    { key: 'fatherName', label: 'Father Name',  field: 'father_name', type: 'text' },
+    { key: 'motherName', label: 'Mother Name',  field: 'mother_name', type: 'text' },
+    { key: 'brothers',   label: 'Brothers',     field: 'brothers',    type: 'text' },
+    { key: 'sisters',    label: 'Sisters',      field: 'sisters',     type: 'text' },
+    { key: 'email',      label: 'Email',        field: 'email',       type: 'text' },
+  ];
+
   // ===== DOM Elements =====
   const tabBtns = document.querySelectorAll('.tab-btn');
   const searchInput = document.getElementById('search-input');
@@ -303,7 +326,7 @@
   }
 
   function closeAllCustomDropdowns() {
-    filterRowsContainer.querySelectorAll('.custom-dropdown.open').forEach(dropdown => {
+    document.querySelectorAll('.custom-dropdown.open').forEach(dropdown => {
       dropdown.classList.remove('open');
       const trigger = dropdown.querySelector('.custom-dropdown-trigger');
       if (trigger) trigger.setAttribute('aria-expanded', 'false');
@@ -326,11 +349,11 @@
           if (valTo) valTo.style.display = 'none';
           if (sep) sep.style.display = 'none';
         } else if (op === 'between') {
-          if (valInput) valInput.style.display = '';
-          if (valTo) valTo.style.display = '';
+          if (valInput) valInput.style.display = 'block';
+          if (valTo) valTo.style.display = 'block';
           if (sep) sep.style.display = '';
         } else {
-          if (valInput) valInput.style.display = '';
+          if (valInput) valInput.style.display = 'block';
           if (valTo) valTo.style.display = 'none';
           if (sep) sep.style.display = 'none';
         }
@@ -422,8 +445,11 @@
         btn.classList.add('active');
         document.body.classList.toggle('boys-active', currentTab === 'boys');
         filters = {};
+        sortField = null;
+        sortDir = 'asc';
         buildFilterUI();
         updateFilterBadge();
+        renderSortUI();
         render();
       });
     });
@@ -455,6 +481,22 @@
 
     const printBtn = document.getElementById('print-btn');
     if (printBtn) printBtn.addEventListener('click', handlePrint);
+
+    // Sort direction toggle
+    document.getElementById('sort-dir-btn').addEventListener('click', () => {
+      if (!sortField) return;
+      sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+      renderSortUI();
+      render();
+    });
+
+    // Clear sort
+    document.getElementById('sort-clear-btn').addEventListener('click', () => {
+      sortField = null;
+      sortDir = 'asc';
+      renderSortUI();
+      render();
+    });
   }
 
   function resetAll() {
@@ -462,9 +504,120 @@
     searchQuery = '';
     clearSearchBtn.classList.remove('visible');
     filters = {};
+    sortField = null;
+    sortDir = 'asc';
     buildFilterUI();
     updateFilterBadge();
+    renderSortUI();
     render();
+  }
+
+  // ===== Sort UI =====
+  function buildSortDropdown() {
+    const wrap = document.getElementById('sort-dropdown-wrap');
+    if (!wrap) return;
+
+    const allOptions = [{ value: '', label: '— None —' }]
+      .concat(SORT_DEFS.map(d => ({ value: d.key, label: d.label })));
+
+    const menuOptions = allOptions.map((opt, i) =>
+      `<button type="button" class="custom-dropdown-option${i === 0 ? ' selected' : ''}" data-value="${escapeHtml(opt.value)}">${escapeHtml(opt.label)}</button>`
+    ).join('');
+
+    wrap.innerHTML = `
+      <div class="custom-dropdown sort-custom-dropdown" data-key="__sort__">
+        <button type="button" class="custom-dropdown-trigger" aria-expanded="false">
+          <span class="custom-dropdown-text">— None —</span>
+          <span class="custom-dropdown-caret">▼</span>
+        </button>
+        <div class="custom-dropdown-menu">${menuOptions}</div>
+        <input type="hidden" class="custom-dropdown-input sort-field-input" data-key="__sort__" value="">
+      </div>`;
+
+    const dropdown = wrap.querySelector('.custom-dropdown');
+    const trigger = dropdown.querySelector('.custom-dropdown-trigger');
+    const labelEl = dropdown.querySelector('.custom-dropdown-text');
+    const input = dropdown.querySelector('.custom-dropdown-input');
+    const opts = dropdown.querySelectorAll('.custom-dropdown-option');
+
+    trigger.addEventListener('click', e => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.contains('open');
+      closeAllCustomDropdowns();
+      if (!isOpen) {
+        dropdown.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    opts.forEach(opt => {
+      opt.addEventListener('click', () => {
+        const value = opt.dataset.value || '';
+        input.value = value;
+        labelEl.textContent = opt.textContent;
+        opts.forEach(o => o.classList.remove('selected'));
+        opt.classList.add('selected');
+        dropdown.classList.remove('open');
+        trigger.setAttribute('aria-expanded', 'false');
+        sortField = value || null;
+        sortDir = 'asc';
+        renderSortUI();
+        render();
+      });
+    });
+  }
+
+  function renderSortUI() {
+    const wrap = document.getElementById('sort-dropdown-wrap');
+    const dirBtn = document.getElementById('sort-dir-btn');
+    const dirIcon = document.getElementById('sort-dir-icon');
+    const clearBtn = document.getElementById('sort-clear-btn');
+
+    if (wrap) {
+      const labelEl = wrap.querySelector('.custom-dropdown-text');
+      const input = wrap.querySelector('.custom-dropdown-input');
+      const opts = wrap.querySelectorAll('.custom-dropdown-option');
+      const matched = sortField ? SORT_DEFS.find(d => d.key === sortField) : null;
+      if (labelEl) labelEl.textContent = matched ? matched.label : '— None —';
+      if (input) input.value = sortField || '';
+      opts.forEach(o => {
+        o.classList.toggle('selected', (o.dataset.value || '') === (sortField || ''));
+      });
+    }
+
+    if (dirBtn) dirBtn.style.display = sortField ? 'inline-flex' : 'none';
+    if (clearBtn) clearBtn.style.display = sortField ? 'inline-flex' : 'none';
+    if (dirIcon) {
+      dirIcon.innerHTML = sortDir === 'asc'
+        ? '<path d="M12 19V5M5 12l7-7 7 7"/>'
+        : '<path d="M12 5v14M5 12l7 7 7-7"/>';
+    }
+    if (dirBtn) dirBtn.title = sortDir === 'asc'
+      ? 'Ascending — click for descending'
+      : 'Descending — click for ascending';
+  }
+
+  // ===== Apply sort =====
+  function applySorting(data) {
+    if (!sortField) return data;
+    const def = SORT_DEFS.find(d => d.key === sortField);
+    if (!def) return data;
+    const dir = sortDir === 'asc' ? 1 : -1;
+    return [...data].sort((a, b) => {
+      let av = a[def.field];
+      let bv = b[def.field];
+      if (def.type === 'numeric') {
+        av = av == null ? (sortDir === 'asc' ? Infinity : -Infinity) : av;
+        bv = bv == null ? (sortDir === 'asc' ? Infinity : -Infinity) : bv;
+        return (av - bv) * dir;
+      }
+      // text
+      av = av ? String(av).toLowerCase().trim() : '';
+      bv = bv ? String(bv).toLowerCase().trim() : '';
+      if (av === '' && bv !== '') return 1;   // empty always last
+      if (bv === '' && av !== '') return -1;
+      return av < bv ? -dir : av > bv ? dir : 0;
+    });
   }
 
   function updateFilterBadge() {
@@ -597,7 +750,7 @@
 
   // ===== Render Cards =====
   function render() {
-    const data = getFilteredData();
+    const data = applySorting(getFilteredData());
     resultsCount.textContent = `${data.length} profile${data.length !== 1 ? 's' : ''} found`;
 
     if (data.length === 0) {
@@ -709,4 +862,6 @@
 
   // ===== Start =====
   init();
+  buildSortDropdown();
+  renderSortUI();
 })();

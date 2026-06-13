@@ -145,6 +145,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "PRIYADARSHINI (DIVORCEE)",
+      "dob": "Aug 6, 1991",
+      "time_of_birth": "02:15:00",
+      "education": "MS Software Engg.,",
+      "job": "IT, QUALITY ANALYSTS, Bank of America, Tharamani, Chennai",
+      "salary": "22 LPA",
+      "height": "05.02 feet",
+      "birth_rashi": "RISHABAM (TAURUS)",
+      "birth_star": "ROHINI",
+      "father_name": "VIJAYAKUMAR.P",
+      "mother_name": "SANTHI.R",
+      "living": "ARCOT / MADIPAKKAM, CHENNAI",
+      "brothers": "0.0",
+      "sisters": "1.0",
+      "email": "vijayakumarsdl@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "SINDHU.A.",
       "dob": "Aug 11, 1991",
       "time_of_birth": "02:20:00",
@@ -487,24 +505,6 @@ const APP_DATA = {
       "is_new": false
     },
     {
-      "name": "SWETHA SAMPATHKUMAR",
-      "dob": "Nov 24, 1995",
-      "time_of_birth": "13:38:00",
-      "education": "B.Tech., M.Tech., Phd.,",
-      "job": "Research Associate @CARDIFF University UK",
-      "salary": "30 LPA",
-      "height": "5' 1\"",
-      "birth_rashi": "VIRUCHAGAM (SCORPIO)",
-      "birth_star": "KETTAI",
-      "father_name": "SAMPATH KUMAR S",
-      "mother_name": "HEMALATHA V",
-      "living": "VENKUNDRAM",
-      "brothers": "0.0",
-      "sisters": "0.0",
-      "email": "hemalathavajerasenan@gmail.com",
-      "is_new": false
-    },
-    {
       "name": "HARIDHA E",
       "dob": "Apr 24, 1996",
       "time_of_birth": "12:30:00",
@@ -811,6 +811,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "KIRUTHIKA P",
+      "dob": "Dec 12, 1997",
+      "time_of_birth": "11:17:00",
+      "education": "B. E. ECE",
+      "job": "",
+      "salary": "",
+      "height": "164.0",
+      "birth_rashi": "RISHABAM (TAURUS)",
+      "birth_star": "KIRUTHIGAI",
+      "father_name": "R. PANNEERSELVAM",
+      "mother_name": "P. KASTHURI",
+      "living": "CHENNAI",
+      "brothers": "0.0",
+      "sisters": "1.0",
+      "email": "kasthurir1309@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "RUBINI.E",
       "dob": "Dec 24, 1997",
       "time_of_birth": "19:45:00",
@@ -898,7 +916,7 @@ const APP_DATA = {
       "brothers": "2.0",
       "sisters": "0.0",
       "email": "jeevaganjain1104@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "PADMAVATHI R",
@@ -988,7 +1006,7 @@ const APP_DATA = {
       "brothers": "Nil",
       "sisters": "Nil",
       "email": "sowbaskar98@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "SWETHA CHANDRASEKHAR JAIN",
@@ -1079,6 +1097,24 @@ const APP_DATA = {
       "sisters": "1 Married",
       "email": "saranbabu.chn@gmail.com",
       "is_new": false
+    },
+    {
+      "name": "SAKTHY ABINAYA B",
+      "dob": "Dec 17, 1998",
+      "time_of_birth": "15:30:00",
+      "education": "CMA, M.Com.",
+      "job": "Finance Analyst",
+      "salary": "",
+      "height": "5'4\"",
+      "birth_rashi": "VIRUCHAGAM (SCORPIO)",
+      "birth_star": "ANUSHAM",
+      "father_name": "BAHUBALIRAJAN V",
+      "mother_name": "PRABAVATHY B",
+      "living": "CHENNAI",
+      "brothers": "0.0",
+      "sisters": "1.0",
+      "email": "prabavathybahubalirajan@gmail.com",
+      "is_new": true
     },
     {
       "name": "POOJA DANUSHRI N",
@@ -1189,6 +1225,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "PRIYANKA J",
+      "dob": "May 25, 1999",
+      "time_of_birth": "13:36:00",
+      "education": "BCA, M.Sc Data Science",
+      "job": "Software Engineer - TCS",
+      "salary": "",
+      "height": "164 CM",
+      "birth_rashi": "KANNI (VIRGO)",
+      "birth_star": "ASHTAM",
+      "father_name": "D JAYAKUMAR",
+      "mother_name": "J JOTHILAKSHMI",
+      "living": "",
+      "brothers": "1- Married",
+      "sisters": "",
+      "email": "devj3010@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "SHALINI D",
       "dob": "Jun 22, 1999",
       "time_of_birth": "08:33:00",
@@ -1222,24 +1276,6 @@ const APP_DATA = {
       "brothers": "Nil",
       "sisters": "One",
       "email": "kcjsounderrajan11@gmail.com",
-      "is_new": false
-    },
-    {
-      "name": "KEERTHIGA A",
-      "dob": "Jul 14, 1999",
-      "time_of_birth": "08:45:00",
-      "education": "B.com (general)",
-      "job": "AR analytics",
-      "salary": "25000.0",
-      "height": "5.4",
-      "birth_rashi": "KADAGAM (CANCER)",
-      "birth_star": "AAILYAM",
-      "father_name": "ANANDHAN",
-      "mother_name": "GEETHA",
-      "living": "CHENNAI",
-      "brothers": "1(youger)",
-      "sisters": "1(elder)",
-      "email": "anandhan7242@gmail.com",
       "is_new": false
     },
     {
@@ -1300,19 +1336,19 @@ const APP_DATA = {
       "name": "MAHALAKSHMI J",
       "dob": "Aug 6, 1999",
       "time_of_birth": "17:30:00",
-      "education": "Final semester of Ph.D",
-      "job": "Going to complete Ph.D on Feb 2026",
-      "salary": "-",
-      "height": "5.4",
+      "education": "Ph.D",
+      "job": "",
+      "salary": "",
+      "height": "5.8",
       "birth_rashi": "RISHABAM (TAURUS)",
       "birth_star": "ROHINI",
-      "father_name": "JINENDIRAKUMAR. J",
-      "mother_name": "RAJESWARI. B",
+      "father_name": "JINENDIRA KUMAR .J",
+      "mother_name": "RAJESWARI.B",
       "living": "THAYANUR",
       "brothers": "1.0",
-      "sisters": "_",
+      "sisters": "No",
       "email": "mahalakshmi13020@gmail.com",
-      "is_new": false
+      "is_new": true
     },
     {
       "name": "YAMINI J",
@@ -1356,7 +1392,7 @@ const APP_DATA = {
       "time_of_birth": "22:45:00",
       "education": "Bcom MBA",
       "job": "LUCAS TVS COMPANY HR",
-      "salary": "25000.0",
+      "salary": "30000.0",
       "height": "172 cm",
       "birth_rashi": "SIMMAM (LEO)",
       "birth_star": "POORAM",
@@ -1385,6 +1421,24 @@ const APP_DATA = {
       "sisters": "1.0",
       "email": "jayasrijayaseelan08@gmail.com",
       "is_new": false
+    },
+    {
+      "name": "SRIVIDHYA A",
+      "dob": "Jan 13, 2000",
+      "time_of_birth": "17:37:00",
+      "education": "B.E Computer Science and Engineering",
+      "job": "IT FIELD - Cyber Security",
+      "salary": "",
+      "height": "5.7",
+      "birth_rashi": "MEENAM (PISCES)",
+      "birth_star": "UTHIRATTADHI",
+      "father_name": "ACHANANDHI",
+      "mother_name": "SHANTHI",
+      "living": "AVADI, CHENNAI",
+      "brothers": "",
+      "sisters": "1.0",
+      "email": "achanandhiv@gmail.com",
+      "is_new": true
     },
     {
       "name": "HEMAMALINI R",
@@ -1603,6 +1657,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "SUSHMITHA DEVI S",
+      "dob": "Sep 12, 2000",
+      "time_of_birth": "02:18:00",
+      "education": "Mba",
+      "job": "Assistant manager in south indian bank",
+      "salary": "12 lakhs per annum",
+      "height": "170 cm",
+      "birth_rashi": "KUMBAM (AQUARIUS)",
+      "birth_star": "SADHAYAM",
+      "father_name": "A SAMPATHUKUMAR",
+      "mother_name": "S SASIKALA",
+      "living": "KANCHIPURAM",
+      "brothers": "1.0",
+      "sisters": "0.0",
+      "email": "a.sampathkumar770@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "AKSHAYA S",
       "dob": "Sep 18, 2000",
       "time_of_birth": "21:15:00",
@@ -1654,24 +1726,6 @@ const APP_DATA = {
       "brothers": "2.0",
       "sisters": "",
       "email": "bagubaliadiraj@gmail.com",
-      "is_new": true
-    },
-    {
-      "name": "DHARANI N",
-      "dob": "Oct 28, 2000",
-      "time_of_birth": "04:32:00",
-      "education": "Bsc",
-      "job": "",
-      "salary": "",
-      "height": "5.4",
-      "birth_rashi": "THULAM (LIBRA)",
-      "birth_star": "SWATHI",
-      "father_name": "NEMIRAJ",
-      "mother_name": "SHANTHI",
-      "living": "MANNARGUDI",
-      "brothers": "1.0",
-      "sisters": "",
-      "email": "ammohan09@gmail.com",
       "is_new": false
     },
     {
@@ -1716,7 +1770,7 @@ const APP_DATA = {
       "time_of_birth": "23:05:00",
       "education": "B.tech (I.T)",
       "job": "AMAZON",
-      "salary": "9.25 LPA",
+      "salary": "10 LPA",
       "height": "167 cm",
       "birth_rashi": "SIMMAM (LEO)",
       "birth_star": "MAGAM",
@@ -1837,6 +1891,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "PADMAJOTHI A",
+      "dob": "Apr 17, 2001",
+      "time_of_birth": "07:55:00",
+      "education": "BCA",
+      "job": "",
+      "salary": "",
+      "height": "5.5",
+      "birth_rashi": "MAGARAM (CAPRICORN)",
+      "birth_star": "THIRUVONAM",
+      "father_name": "APPANDAI RAJ",
+      "mother_name": "JAYASHREE",
+      "living": "CHENNAI",
+      "brothers": "1.0",
+      "sisters": "1.0",
+      "email": "jayashreeappandairaj@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "ARACHSELVI E",
       "dob": "May 10, 2001",
       "time_of_birth": "15:19:00",
@@ -1855,22 +1927,40 @@ const APP_DATA = {
       "is_new": false
     },
     {
-      "name": "THAMARAI SELVI A",
-      "dob": "Jun 30, 2001",
-      "time_of_birth": "21:00:00",
-      "education": "B.Tech (Electronics and Communication Engineering)",
-      "job": "Signals and Systems (SANDS)",
-      "salary": "",
-      "height": "5.6 '",
-      "birth_rashi": "THULAM (LIBRA)",
-      "birth_star": "SWATHI",
-      "father_name": "ANANDA KUMAR N",
-      "mother_name": "JAYA SUDHA A",
-      "living": "CHENNAI",
-      "brothers": "1.0",
-      "sisters": "Null",
-      "email": "agowtham578@gmail.com",
-      "is_new": false
+      "name": "PADMAVATHI A",
+      "dob": "May 10, 2001",
+      "time_of_birth": "06:00:00",
+      "education": "M. Sc , B. Ed",
+      "job": "Teacher",
+      "salary": "15000.0",
+      "height": "5.3",
+      "birth_rashi": "DHANUSHU (SAGITTARIUS)",
+      "birth_star": "MOOLAM",
+      "father_name": "P. ANANTHARAJAN",
+      "mother_name": "A. SHEELA",
+      "living": "CHEYYAR",
+      "brothers": "No",
+      "sisters": "1.0",
+      "email": "anantharajan367@gmail.com",
+      "is_new": true
+    },
+    {
+      "name": "KANTHI S",
+      "dob": "Jun 11, 2001",
+      "time_of_birth": "22:36:00",
+      "education": "Bsc , MCA",
+      "job": "QA Engineer",
+      "salary": "600000.0",
+      "height": "172.0",
+      "birth_rashi": "KUMBAM (AQUARIUS)",
+      "birth_star": "AVITTAM",
+      "father_name": "SATEESH KUMAR N",
+      "mother_name": "UDHAYA KUMARI D",
+      "living": "BANGALORE",
+      "brothers": "",
+      "sisters": "1.0",
+      "email": "udhayasathish25@gmail.com",
+      "is_new": true
     },
     {
       "name": "PADMAPRIYA A",
@@ -1888,7 +1978,7 @@ const APP_DATA = {
       "brothers": "1 (married)",
       "sisters": "",
       "email": "panditjayabal1999@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "NITHYASRI A",
@@ -1906,7 +1996,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "0.0",
       "email": "appu.raj.1968@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "LAVANYA R",
@@ -1960,7 +2050,7 @@ const APP_DATA = {
       "brothers": "",
       "sisters": "1.0",
       "email": "rameshyasodharan64@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "INDUJA S",
@@ -1996,7 +2086,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "",
       "email": "santhoshpushparaj31@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "ANUSRI V",
@@ -2017,22 +2107,40 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "SAVITHRI A",
+      "dob": "Mar 12, 2002",
+      "time_of_birth": "15:00:00",
+      "education": "MCA",
+      "job": "Technical Consultant",
+      "salary": "50000.0",
+      "height": "160cm",
+      "birth_rashi": "KUMBAM (AQUARIUS)",
+      "birth_star": "SADHAYAM",
+      "father_name": "P.AJITHKUMAR",
+      "mother_name": "A.USHA",
+      "living": "S.V.NAGARAM, ARANI",
+      "brothers": "0.0",
+      "sisters": "1.0",
+      "email": "vijayapriyasavi@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "PREETHIKA B",
       "dob": "Mar 28, 2002",
       "time_of_birth": "00:15:00",
-      "education": "B.Sc.,",
-      "job": "Tata Electronics , Hosur",
+      "education": "MBA Final year",
+      "job": "",
       "salary": "",
-      "height": "5.2",
+      "height": "5.0",
       "birth_rashi": "SIMMAM (LEO)",
       "birth_star": "UTHIRAM",
-      "father_name": "BOOPAL .P",
-      "mother_name": "PADMAJOTHI BOOPAL",
-      "living": "VELACHERRY, CHENNAI",
+      "father_name": "BOOPAL",
+      "mother_name": "PADMAJOTHI",
+      "living": "CHENNAI",
       "brothers": "1.0",
       "sisters": "0.0",
       "email": "sriparastrader@gmail.com",
-      "is_new": false
+      "is_new": true
     },
     {
       "name": "AKSHAYA JAIN V",
@@ -2050,7 +2158,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "-",
       "email": "adhithya7vasupal@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "SREE DEVI R",
@@ -2086,6 +2194,60 @@ const APP_DATA = {
       "brothers": "0.0",
       "sisters": "1 younger sister",
       "email": "pathmavathiselvakumar@gmail.com",
+      "is_new": false
+    },
+    {
+      "name": "MONICADEVI S",
+      "dob": "Jun 17, 2002",
+      "time_of_birth": "01:37:00",
+      "education": "BE(CSE).MBA",
+      "job": "Preparing for government exam",
+      "salary": "--",
+      "height": "159 cm",
+      "birth_rashi": "SIMMAM (LEO)",
+      "birth_star": "POORAM",
+      "father_name": "P.SANTHIRAJ",
+      "mother_name": "P.SARASVATHI",
+      "living": "TINDIVANAM",
+      "brothers": "1.YOUNGER",
+      "sisters": "NIL",
+      "email": "santhiraj2361@gmail.com",
+      "is_new": true
+    },
+    {
+      "name": "PADMAVATHY J",
+      "dob": "Aug 3, 2002",
+      "time_of_birth": "07:00:00",
+      "education": "B.E Computer Science",
+      "job": "Senior Software Engineer",
+      "salary": "",
+      "height": "5.5",
+      "birth_rashi": "RISHABAM (TAURUS)",
+      "birth_star": "KIRUTHIGAI",
+      "father_name": "JAYAPAL",
+      "mother_name": "PONNI",
+      "living": "CHENNAI",
+      "brothers": "None",
+      "sisters": "None",
+      "email": "ponnijayapal1970@gmail.com",
+      "is_new": true
+    },
+    {
+      "name": "KAVIYA P",
+      "dob": "Aug 6, 2002",
+      "time_of_birth": "13:50:00",
+      "education": "MBA",
+      "job": "Deloitte - Tax Consultant II",
+      "salary": "70000.0",
+      "height": "161.0",
+      "birth_rashi": "MIDHUNAM (GEMINI)",
+      "birth_star": "THIRUVATHIRAI",
+      "father_name": "C PONNAIYAN",
+      "mother_name": "P JINASRI",
+      "living": "CHENNAI, AMBATTUR",
+      "brothers": "1.0",
+      "sisters": "0.0",
+      "email": "udhayarajp6@gmail.com",
       "is_new": true
     },
     {
@@ -2122,7 +2284,7 @@ const APP_DATA = {
       "brothers": "1 Younger",
       "sisters": "",
       "email": "padmadevi594@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "DEEPA D",
@@ -2140,7 +2302,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "No",
       "email": "baranijibarani28@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "RAMYA D",
@@ -2176,7 +2338,7 @@ const APP_DATA = {
       "brothers": "One",
       "sisters": "No",
       "email": "Jeevaganbagubali@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "PRATHIBA S",
@@ -2195,6 +2357,24 @@ const APP_DATA = {
       "sisters": "",
       "email": "padmadevijain22@gmail.com",
       "is_new": false
+    },
+    {
+      "name": "PADMAAGALYA M",
+      "dob": "Sep 16, 2003",
+      "time_of_birth": "11:30:00",
+      "education": "MA LIT.",
+      "job": "",
+      "salary": "",
+      "height": "51/4",
+      "birth_rashi": "RISHABAM (TAURUS)",
+      "birth_star": "KIRUTHIGAI",
+      "father_name": "A.MANICKAM",
+      "mother_name": "M.PADMADEEPA",
+      "living": "PERIYA KOLAPPALUR",
+      "brothers": "1 BROTHER.",
+      "sisters": "No",
+      "email": "neelakesichandranathan@gmail.com",
+      "is_new": true
     },
     {
       "name": "SHALINI S",
@@ -2230,7 +2410,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "",
       "email": "rrkyesh@gmail.com",
-      "is_new": true
+      "is_new": false
     }
   ],
   "boys": [
@@ -4611,24 +4791,6 @@ const APP_DATA = {
       "is_new": false
     },
     {
-      "name": "PRITHIVIRAJAN T",
-      "dob": "Feb 15, 1985",
-      "time_of_birth": "15:40:00",
-      "education": "MCA",
-      "job": "Production Specialist",
-      "salary": "12.5 LPA",
-      "height": "5\"9'",
-      "birth_rashi": "DHANUSHU (SAGITTARIUS)",
-      "birth_star": "MOOLAM",
-      "father_name": "THOLKAPPIAN",
-      "mother_name": "KASTHURI",
-      "living": "BENGALORE",
-      "brothers": "1.0",
-      "sisters": "0.0",
-      "email": "tprithivirajan@gmail.com",
-      "is_new": true
-    },
-    {
       "name": "DHARANIKUMAR A",
       "dob": "Feb 21, 1985",
       "time_of_birth": "01:45:00",
@@ -4866,19 +5028,19 @@ const APP_DATA = {
       "name": "PADMARAJAN R",
       "dob": "Dec 3, 1985",
       "time_of_birth": "16:30:00",
-      "education": "MA., M.Ed., M.Phil., P.hd.,(doing)",
-      "job": "Assistant Prof of All Ameen College of Education.",
-      "salary": "25000.0",
-      "height": "168 cm",
+      "education": "MA MED MPHIL PHD DOING",
+      "job": "ASST PROFESSOR AL AMEEN COLLEGE OF EDUCATION TIRUVANNAMALAI",
+      "salary": "30000.0",
+      "height": "168.0",
       "birth_rashi": "KADAGAM (CANCER)",
-      "birth_star": "AAILYAM",
-      "father_name": "RAMU",
-      "mother_name": "MANJULA",
-      "living": "SOMASIPADI, TIRUVANNAMALAI",
-      "brothers": "NO",
-      "sisters": "One",
+      "birth_star": "POOSAM",
+      "father_name": "RAMU S",
+      "mother_name": "MANJULA R",
+      "living": "SOMASIPADI",
+      "brothers": "NIL",
+      "sisters": "1 ELDER SISTER",
       "email": "ramumanjula03@gmail.com",
-      "is_new": false
+      "is_new": true
     },
     {
       "name": "ARUNKUMAR V",
@@ -5511,24 +5673,6 @@ const APP_DATA = {
       "is_new": false
     },
     {
-      "name": "SHANTHIRAJ S",
-      "dob": "Sep 28, 1987",
-      "time_of_birth": "18:30:00",
-      "education": "BE",
-      "job": "Bangalore metro railway",
-      "salary": "47000.0",
-      "height": "5.6 feet",
-      "birth_rashi": "MESHAM (ARIES)",
-      "birth_star": "BHARANI",
-      "father_name": "SRIPAL S",
-      "mother_name": "MEGAMALINI S",
-      "living": "BANGALORE",
-      "brothers": "0.0",
-      "sisters": "3.0",
-      "email": "scto_shanthirajs@bmrc.co.in",
-      "is_new": false
-    },
-    {
       "name": "JINARAJAN A",
       "dob": "Oct 1, 1987",
       "time_of_birth": "21:05:00",
@@ -5563,6 +5707,24 @@ const APP_DATA = {
       "sisters": "",
       "email": "mithun410@yahoo.com",
       "is_new": false
+    },
+    {
+      "name": "MITHUNCHADAR R",
+      "dob": "Oct 4, 1987",
+      "time_of_birth": "15:32:00",
+      "education": "Bsc computer science",
+      "job": "Admin at Espa international",
+      "salary": "20000.0",
+      "height": "5.4",
+      "birth_rashi": "KUMBAM (AQUARIUS)",
+      "birth_star": "SADHAYAM",
+      "father_name": "A.RAVI CHANDRAN",
+      "mother_name": "R.PADMAJA",
+      "living": "CHENNAI",
+      "brothers": "1 younger brother",
+      "sisters": "0.0",
+      "email": "Mithun410@yahoo.com",
+      "is_new": true
     },
     {
       "name": "DHARANIKUMAR M",
@@ -5832,24 +5994,6 @@ const APP_DATA = {
       "brothers": "ONE BROTHER",
       "sisters": "-",
       "email": "manjuladevi136@gmail.com",
-      "is_new": false
-    },
-    {
-      "name": "PADMAPRAKASH M",
-      "dob": "May 2, 1988",
-      "time_of_birth": "05:55:00",
-      "education": "Diplomo in auto mobile engg",
-      "job": "Junior manger at jtekt india ltd",
-      "salary": "20000.0",
-      "height": "170.0",
-      "birth_rashi": "THULAM (LIBRA)",
-      "birth_star": "SWATHI",
-      "father_name": "MAHENDIRAN",
-      "mother_name": "JANSIRANI",
-      "living": "ARNI",
-      "brothers": "No",
-      "sisters": "No",
-      "email": "Mjprakash02@gmail.com",
       "is_new": false
     },
     {
@@ -7293,22 +7437,22 @@ const APP_DATA = {
       "is_new": false
     },
     {
-      "name": "ABHILASH S",
+      "name": "ABILASH S",
       "dob": "Nov 10, 1990",
       "time_of_birth": "06:45:00",
-      "education": "M.COM",
-      "job": "VENDOMATICINDIA PRIVATE LIMITED",
-      "salary": "30,000/-",
-      "height": "_",
+      "education": "M COM",
+      "job": "Vendomaticindia. Pvt. Ltd. Warehouse Supervisor.",
+      "salary": "40000.0",
+      "height": "162 cm",
       "birth_rashi": "KADAGAM (CANCER)",
       "birth_star": "AAILYAM",
-      "father_name": "M.SELVAMANI ( AGRICULTURE)",
-      "mother_name": "MALARVIZHI (PRIMARY HM)",
-      "living": "PERUMBUGAI",
+      "father_name": "M. SELVAMANI",
+      "mother_name": "A. MALARVIZHI",
+      "living": "CHENNAI",
       "brothers": "No",
-      "sisters": "Two sisters (married)",
-      "email": "Malarvizhipups@gmail.com",
-      "is_new": false
+      "sisters": "2.0",
+      "email": "malarvizhipups@gmail.com",
+      "is_new": true
     },
     {
       "name": "JAYAVIJAYAN R",
@@ -7921,6 +8065,24 @@ const APP_DATA = {
       "sisters": "Nil",
       "email": "aavijimi@gmail.com",
       "is_new": false
+    },
+    {
+      "name": "RAJKUMAR.V",
+      "dob": "Dec 23, 1991",
+      "time_of_birth": "09:45:00",
+      "education": "Diploma",
+      "job": "Machine shop supervisor and programmer",
+      "salary": "45000.0",
+      "height": "5.8",
+      "birth_rashi": "MIDHUNAM (GEMINI)",
+      "birth_star": "PUNARPOOSAM",
+      "father_name": "VIJAYAKUMAR.M",
+      "mother_name": "SARASWATI.V",
+      "living": "CHENNAI",
+      "brothers": "1.0",
+      "sisters": "0.0",
+      "email": "rajkumar.rajvijay1@gmail.com",
+      "is_new": true
     },
     {
       "name": "YUVARAJ.A",
@@ -8571,6 +8733,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "AJEETH S",
+      "dob": "Oct 2, 1992",
+      "time_of_birth": "02:30:00",
+      "education": "BCA",
+      "job": "Team Lead",
+      "salary": "50000.0",
+      "height": "165.0",
+      "birth_rashi": "VIRUCHAGAM (SCORPIO)",
+      "birth_star": "KETTAI",
+      "father_name": "SUGUMAR A",
+      "mother_name": "RAJAKUMARI S",
+      "living": "CHENNAI",
+      "brothers": "1.0",
+      "sisters": "0.0",
+      "email": "appandairaaj06@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "TAMIL SELVAN S",
       "dob": "Oct 4, 1992",
       "time_of_birth": "07:05:00",
@@ -8789,20 +8969,20 @@ const APP_DATA = {
     {
       "name": "KAMALESH S",
       "dob": "Feb 4, 1993",
-      "time_of_birth": "04:30:00",
-      "education": "DEEE",
-      "job": "ELANGOVAN ELECTRICAL SERVICE",
-      "salary": "25000.0",
-      "height": "5.8",
+      "time_of_birth": "04:20:00",
+      "education": "Diploma",
+      "job": "Cctv engineer (aachi masala)",
+      "salary": "40000.0",
+      "height": "172.0",
       "birth_rashi": "MIDHUNAM (GEMINI)",
       "birth_star": "THIRUVATHIRAI",
-      "father_name": "V.SRITHARAN",
-      "mother_name": "S.VIJAYA",
-      "living": "AYAPAKKAM,CHENNAI",
-      "brothers": "",
-      "sisters": "1.0",
-      "email": "vijayasri4944@gmail.com",
-      "is_new": false
+      "father_name": "SRIDHARAN",
+      "mother_name": "VIJAYA",
+      "living": "CHENNAI, AYAPAKKAM",
+      "brothers": "No",
+      "sisters": "1 sister married",
+      "email": "Kamalesh Vivek1993@gmail.com",
+      "is_new": true
     },
     {
       "name": "DINESH KUMAR A",
@@ -9018,7 +9198,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "",
       "email": "padmalc2231@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "NAGENDRA J",
@@ -9170,7 +9350,7 @@ const APP_DATA = {
       "time_of_birth": "11:40:00",
       "education": "BE Mechanical&MBA",
       "job": "Managing Director (I Impec Impex I-Impor)",
-      "salary": "45000.0",
+      "salary": "90000.0",
       "height": "172 cm",
       "birth_rashi": "KADAGAM (CANCER)",
       "birth_star": "AAILYAM",
@@ -9350,7 +9530,7 @@ const APP_DATA = {
       "time_of_birth": "00:35:00",
       "education": "MCA",
       "job": "Software Engineer - Flex India Pvt Ltd",
-      "salary": "8.5 LPA",
+      "salary": "13.5 LPA",
       "height": "145CM",
       "birth_rashi": "KADAGAM (CANCER)",
       "birth_star": "POOSAM",
@@ -9440,17 +9620,17 @@ const APP_DATA = {
       "time_of_birth": "21:00:00",
       "education": "DEEE",
       "job": "Own business",
-      "salary": "50k",
-      "height": "175cm",
+      "salary": "35000.0",
+      "height": "170cm",
       "birth_rashi": "SIMMAM (LEO)",
       "birth_star": "POORAM",
-      "father_name": "THANAYA KUMAR P",
-      "mother_name": "CHANDRA .A",
-      "living": "GINGEE",
+      "father_name": "THANYAKUMAR.P",
+      "mother_name": "CHANDRA .A (LATE)",
+      "living": "PERUMPUGAI",
       "brothers": "2.0",
       "sisters": "Nil",
       "email": "jvijayan5@gmail.com",
-      "is_new": false
+      "is_new": true
     },
     {
       "name": "DINAKAR D",
@@ -9631,6 +9811,24 @@ const APP_DATA = {
       "sisters": "0.0",
       "email": "cjayasenan@gmail.com",
       "is_new": false
+    },
+    {
+      "name": "SUNDARRAJAN B",
+      "dob": "May 6, 1994",
+      "time_of_birth": "14:15:00",
+      "education": "B.e mechanical engineering",
+      "job": "Working in private sector",
+      "salary": "40000/month",
+      "height": "5.9",
+      "birth_rashi": "MESHAM (ARIES)",
+      "birth_star": "ASHWANI",
+      "father_name": "BALRAJ",
+      "mother_name": "PADMAVATHI",
+      "living": "NANDAMBAKKAM,KUNDRATHUR",
+      "brothers": "1.0",
+      "sisters": "0.0",
+      "email": "sundarrajan5694@gmail.com",
+      "is_new": true
     },
     {
       "name": "JINAKUMAR E",
@@ -10155,6 +10353,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "GOWRAV N VORA",
+      "dob": "Dec 7, 1994",
+      "time_of_birth": "22:50:00",
+      "education": "Masters of Engineering - Industrial Engineering",
+      "job": "Asst. Manager - SOBHA Constructions, Dubai",
+      "salary": "INR 2,25,000 per month",
+      "height": "169 cms",
+      "birth_rashi": "KUMBAM (AQUARIUS)",
+      "birth_star": "AVITTAM",
+      "father_name": "NAGIN CHANDRA J VORA",
+      "mother_name": "BABY N VORA",
+      "living": "DUBAI",
+      "brothers": "-",
+      "sisters": "1.0",
+      "email": "gowravora@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "ABINANDHAN S",
       "dob": "Dec 12, 1994",
       "time_of_birth": "04:42:00",
@@ -10178,7 +10394,7 @@ const APP_DATA = {
       "time_of_birth": "08:30:00",
       "education": "BE mechatronics",
       "job": "Design Engineer at ALSTOM TRANSPORT INDIA LTD",
-      "salary": "10 LPA",
+      "salary": "14 LPA",
       "height": "174 cm (5.8)",
       "birth_rashi": "MESHAM (ARIES)",
       "birth_star": "BHARANI",
@@ -10713,24 +10929,6 @@ const APP_DATA = {
       "is_new": false
     },
     {
-      "name": "PADMA KUMAR S",
-      "dob": "Jul 16, 1995",
-      "time_of_birth": "00:05:00",
-      "education": "DECE",
-      "job": "Site Manager - (Oman)",
-      "salary": "14.4Lpa",
-      "height": "178cm",
-      "birth_rashi": "KUMBAM (AQUARIUS)",
-      "birth_star": "SADHAYAM",
-      "father_name": "K.P.SEKAR",
-      "mother_name": "SHAKILA",
-      "living": "KORAKKOTAI",
-      "brothers": "0.0",
-      "sisters": "1.0",
-      "email": "pavipadmakumar17@gmail.com",
-      "is_new": false
-    },
-    {
       "name": "PATTURAJ R",
       "dob": "Jul 30, 1995",
       "time_of_birth": "17:25:00",
@@ -10854,7 +11052,7 @@ const APP_DATA = {
       "brothers": "0.0",
       "sisters": "1.0",
       "email": "devabalu.m@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "ARAVIND KUMAR D",
@@ -10962,7 +11160,7 @@ const APP_DATA = {
       "brothers": "No",
       "sisters": "No",
       "email": "gowthaman0711@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "ADHINATH S",
@@ -10999,6 +11197,42 @@ const APP_DATA = {
       "sisters": "0.0",
       "email": "santhoshajiy@gmail.com",
       "is_new": false
+    },
+    {
+      "name": "DHANVANTHAN JEEVAGAN",
+      "dob": "Dec 12, 1995",
+      "time_of_birth": "07:43:00",
+      "education": "B tech",
+      "job": "",
+      "salary": "",
+      "height": "5'11",
+      "birth_rashi": "KADAGAM (CANCER)",
+      "birth_star": "AAILYAM",
+      "father_name": "JEEVAGAN B",
+      "mother_name": "KALPANA J",
+      "living": "",
+      "brothers": "",
+      "sisters": "",
+      "email": "kalpsjeeva@gmail.com",
+      "is_new": false
+    },
+    {
+      "name": "DHANVANTH JEEVAGAN",
+      "dob": "Dec 12, 1995",
+      "time_of_birth": "07:43:00",
+      "education": "B tech",
+      "job": "Subject matter expert at Elsevier",
+      "salary": "70000 per month",
+      "height": "5'11",
+      "birth_rashi": "KADAGAM (CANCER)",
+      "birth_star": "AAILYAM",
+      "father_name": "JEEVAGAN",
+      "mother_name": "KALPANA J",
+      "living": "CHENNAI",
+      "brothers": "0.0",
+      "sisters": "0.0",
+      "email": "kalpsjeeva@gmail.com",
+      "is_new": true
     },
     {
       "name": "AKSHAYAM R",
@@ -11060,7 +11294,7 @@ const APP_DATA = {
       "time_of_birth": "17:15:00",
       "education": "MCA",
       "job": "System and Solutions Experts",
-      "salary": "85000.0",
+      "salary": "95000.0",
       "height": "5.5 164CM",
       "birth_rashi": "SIMMAM (LEO)",
       "birth_star": "POORAM",
@@ -11106,6 +11340,24 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "",
       "email": "parassureshjn@gmail.com",
+      "is_new": false
+    },
+    {
+      "name": "AJAY M",
+      "dob": "Feb 11, 1996",
+      "time_of_birth": "18:45:00",
+      "education": "B E",
+      "job": "Team Lead, Accenture",
+      "salary": "20 L per annual",
+      "height": "5 ft 9 in",
+      "birth_rashi": "THULAM (LIBRA)",
+      "birth_star": "SWATHI",
+      "father_name": "S.Mohankumar(Nemi)",
+      "mother_name": "M.Padma",
+      "living": "Pillur",
+      "brothers": "One elder",
+      "sisters": "No",
+      "email": "nemimohankumar@gmail.com",
       "is_new": false
     },
     {
@@ -11197,6 +11449,24 @@ const APP_DATA = {
       "sisters": "2 sis, married",
       "email": "Anandhan7242@gmail.com",
       "is_new": false
+    },
+    {
+      "name": "JAYAMANI RAJAN S",
+      "dob": "Apr 21, 1996",
+      "time_of_birth": "11:30:00",
+      "education": "BE",
+      "job": "Marketing Analyst",
+      "salary": "400000.0",
+      "height": "6ft",
+      "birth_rashi": "RISHABAM (TAURUS)",
+      "birth_star": "ROHINI",
+      "father_name": "SRIPAL S",
+      "mother_name": "BHUVANA KUMARI S",
+      "living": "CHENGAM",
+      "brothers": "",
+      "sisters": "1.0",
+      "email": "sripalbhuvana@gmail.com",
+      "is_new": true
     },
     {
       "name": "KARTHICK S",
@@ -11430,6 +11700,24 @@ const APP_DATA = {
       "brothers": "No",
       "sisters": "1 ELDER SISTER (MARRIED)",
       "email": "smashing.saras@gmail.com",
+      "is_new": false
+    },
+    {
+      "name": "JIROSHAN R",
+      "dob": "Aug 26, 1996",
+      "time_of_birth": "16:32:00",
+      "education": "B.E. EEE",
+      "job": "DATA ENGINEER IN NORDEA BANK IN SWEDEN",
+      "salary": "ON REQUEST",
+      "height": "184.0",
+      "birth_rashi": "MAGARAM (CAPRICORN)",
+      "birth_star": "UTTHIRADAM",
+      "father_name": "RAVICHANDIRAN V",
+      "mother_name": "SANTHI A",
+      "living": "(PARENTS)POLUR",
+      "brothers": "ONE (YOUNGER)",
+      "sisters": "NO",
+      "email": "ravichandiranhi@gmail.com",
       "is_new": true
     },
     {
@@ -11556,7 +11844,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "1.0",
       "email": "Jeevaganjain1104@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "SATHISH KUMAR R",
@@ -11829,24 +12117,6 @@ const APP_DATA = {
       "is_new": false
     },
     {
-      "name": "ASWINKUMAR U",
-      "dob": "Jan 18, 1997",
-      "time_of_birth": "12:30:00",
-      "education": "M E EEE POWER MANGEMENT",
-      "job": "EE+POWER PERUGUDI CHENNAI POWER SYSTEM MANAGEMENTS",
-      "salary": "13LAKS PA",
-      "height": "182CM",
-      "birth_rashi": "RISHABAM (TAURUS)",
-      "birth_star": "KIRUTHIGAI",
-      "father_name": "A .UDAYAKUMAR ,TNEB RTD",
-      "mother_name": "A.RAJALAKSHMI TEACHER PVT",
-      "living": "TIRUVANNAMALAI",
-      "brothers": "Nil",
-      "sisters": "Sister elder MAERIED",
-      "email": "Oldudaya@gmail.com",
-      "is_new": false
-    },
-    {
       "name": "SANGEETH ALIAS PRATHEEP",
       "dob": "Jan 21, 1997",
       "time_of_birth": "21:06:00",
@@ -11919,6 +12189,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "ADITHYA K",
+      "dob": "Feb 9, 1997",
+      "time_of_birth": "05:55:00",
+      "education": "BE.,",
+      "job": "Private Company",
+      "salary": "25000.0",
+      "height": "180.0",
+      "birth_rashi": "KUMBAM (AQUARIUS)",
+      "birth_star": "SADHAYAM",
+      "father_name": "KOMATEESWARAN A",
+      "mother_name": "PADMAJOTHI K",
+      "living": "KANCHEEPURAM",
+      "brothers": "-",
+      "sisters": "1.0",
+      "email": "aadhiadithya09@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "PRABHU A C",
       "dob": "Mar 9, 1997",
       "time_of_birth": "10:50:00",
@@ -11978,7 +12266,7 @@ const APP_DATA = {
       "time_of_birth": "06:10:00",
       "education": "BE",
       "job": "SENIOR CONSULTANT",
-      "salary": "15.5 LPA",
+      "salary": "19 LPA",
       "height": "174 cm",
       "birth_rashi": "THULAM (LIBRA)",
       "birth_star": "SWATHI",
@@ -12024,7 +12312,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "0.0",
       "email": "dharaniviji66@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "NAVINKUMAR V B",
@@ -12175,8 +12463,8 @@ const APP_DATA = {
       "dob": "Jul 19, 1997",
       "time_of_birth": "14:15:00",
       "education": "MBBS,MD",
-      "job": "Doctor",
-      "salary": "",
+      "job": "NQRUVI HOSPITAL VELLORE",
+      "salary": "30 L PER ANNUM",
       "height": "5'10\"",
       "birth_rashi": "DHANUSHU (SAGITTARIUS)",
       "birth_star": "POORADAM",
@@ -12330,7 +12618,7 @@ const APP_DATA = {
       "brothers": "One younger brother",
       "sisters": "-",
       "email": "deepanathan64@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "VIMAL KUMAR S",
@@ -12338,7 +12626,7 @@ const APP_DATA = {
       "time_of_birth": "02:50:00",
       "education": "BE (Mechanical)",
       "job": "Service Engineer",
-      "salary": "40000.0",
+      "salary": "50000.0",
       "height": "5.6",
       "birth_rashi": "THULAM (LIBRA)",
       "birth_star": "VISAGAM",
@@ -12509,8 +12797,8 @@ const APP_DATA = {
       "living": "CHENNAI",
       "brothers": "No",
       "sisters": "2.0",
-      "email": "selvakumar.rajaraja@gmail.com",
-      "is_new": true
+      "email": "selvakumar.rajarajan@gmail.com",
+      "is_new": false
     },
     {
       "name": "NARESH V",
@@ -12600,25 +12888,25 @@ const APP_DATA = {
       "brothers": "0.0",
       "sisters": "0.0",
       "email": "nithinjknov19@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
-      "name": "PAROKSH PRABHU JAIN",
-      "dob": "Nov 28, 1997",
-      "time_of_birth": "23:29:00",
-      "education": "MBA, B Tech",
-      "job": "Manager Sales & Strategy",
-      "salary": "16 Lakh PA",
-      "height": "181 cms",
-      "birth_rashi": "KANNI (VIRGO)",
-      "birth_star": "UTHIRAM",
-      "father_name": "S BABU JAIN",
-      "mother_name": "MAMTA JAIN",
-      "living": "BENGALURU",
-      "brothers": "No",
-      "sisters": "No",
-      "email": "sugbaj@gmail.com",
-      "is_new": false
+      "name": "MAHAVEERDOSS B",
+      "dob": "Nov 23, 1997",
+      "time_of_birth": "16:23:00",
+      "education": "B.E",
+      "job": "Software Engineer",
+      "salary": "",
+      "height": "6ft",
+      "birth_rashi": "SIMMAM (LEO)",
+      "birth_star": "POORAM",
+      "father_name": "D.BALAJIDOSS",
+      "mother_name": "S.LATHA",
+      "living": "VELLORE",
+      "brothers": "",
+      "sisters": "1.0",
+      "email": "lathabalajidoss1973@gmail.com",
+      "is_new": true
     },
     {
       "name": "DILEEP KUMMAR J",
@@ -12765,12 +13053,30 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "ARAVIND U",
+      "dob": "Jan 16, 1998",
+      "time_of_birth": "08:13:00",
+      "education": "BSC .COMPUTER SCIENCE, DIPLOMA. EEE",
+      "job": "Quality inspection (Tube india investment pvt. Ltd) chennai",
+      "salary": "27000.0",
+      "height": "165.0",
+      "birth_rashi": "SIMMAM (LEO)",
+      "birth_star": "MAGAM",
+      "father_name": "UDHAYAKUMAR. J",
+      "mother_name": "VIJAYALAKASHMI.U",
+      "living": "400,JAIN KOVIL STREET, NALLAVAN PALAYAM,",
+      "brothers": "1.0",
+      "sisters": "Nil",
+      "email": "udhayakumar68523@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "AJITH PRASAD R",
       "dob": "Feb 1, 1998",
       "time_of_birth": "21:00:00",
       "education": "B.Com, MBA",
-      "job": "SUNDARAM FINANCE LIMITED, ASSISTANT MANAGER(PERMANENT)",
-      "salary": "5.4 PA",
+      "job": "SUNDARAM FINANCE LIMITED, ASSISTANTDeputy MANAGER(PERMANENT)",
+      "salary": "8 PA",
       "height": "5.8 FEET",
       "birth_rashi": "MEENAM (PISCES)",
       "birth_star": "UTHIRATTADHI",
@@ -12806,7 +13112,7 @@ const APP_DATA = {
       "time_of_birth": "11:30:00",
       "education": "DEEE",
       "job": "Jains Hyndai service manager",
-      "salary": "45000 per month",
+      "salary": "65000 per month",
       "height": "6 feet",
       "birth_rashi": "MESHAM (ARIES)",
       "birth_star": "ASHWANI",
@@ -12924,7 +13230,7 @@ const APP_DATA = {
       "brothers": "2.0",
       "sisters": "No",
       "email": "kvmahaveer83@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "BHARATH KUMAR V",
@@ -12981,12 +13287,30 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "DINESH R",
+      "dob": "Jun 17, 1998",
+      "time_of_birth": "13:15:00",
+      "education": "B.com",
+      "job": "HAL Engine division- Admin assistant",
+      "salary": "",
+      "height": "5 ft 11inch",
+      "birth_rashi": "MEENAM (PISCES)",
+      "birth_star": "POORATATHI",
+      "father_name": "K RAMESH",
+      "mother_name": "P DEVI PRIYA",
+      "living": "BANGALORE",
+      "brothers": "0.0",
+      "sisters": "1.0",
+      "email": "Dineshdine6045@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "SURENDER J",
       "dob": "Jul 13, 1998",
       "time_of_birth": "12:20:00",
       "education": "B.E",
-      "job": "Quaity Engineer @ ZF RANE Guduvancherry",
-      "salary": "25000.0",
+      "job": "Process Associate Capgemini (OMR)",
+      "salary": "40000.0",
       "height": "184 cm",
       "birth_rashi": "KUMBAM (AQUARIUS)",
       "birth_star": "SADHAYAM",
@@ -13021,8 +13345,8 @@ const APP_DATA = {
       "dob": "Jul 17, 1998",
       "time_of_birth": "10:20:00",
       "education": "B.E Mechanical Engineering - Anna University (MNMJEC)",
-      "job": "Business Engineer - Valeo India Pvt Ltd, OMR Navalur",
-      "salary": "9.5 LPA",
+      "job": "Sr.Engineer - Valeo India Pvt Ltd, OMR Navalur",
+      "salary": "95000.0",
       "height": "182 CMS",
       "birth_rashi": "MESHAM (ARIES)",
       "birth_star": "ASHWANI",
@@ -13031,8 +13355,26 @@ const APP_DATA = {
       "living": "PEERKANKARANAI, TAMBARAM",
       "brothers": "",
       "sisters": "1.0",
-      "email": "Subashm.98@outlook.con",
+      "email": "Thisismrnathan1971@gmail.com",
       "is_new": false
+    },
+    {
+      "name": "VIMAL RAJ R",
+      "dob": "Jul 22, 1998",
+      "time_of_birth": "12:40:00",
+      "education": "Bachelor of Mechanical Engineering",
+      "job": "Tata Service Centre",
+      "salary": "18000.0",
+      "height": "5'6",
+      "birth_rashi": "MIDHUNAM (GEMINI)",
+      "birth_star": "THIRUVATHIRAI",
+      "father_name": "S.RAVICHANDRAN",
+      "mother_name": "R.LAKSHMI BAI",
+      "living": "PORUR CHENNAI",
+      "brothers": "2.0",
+      "sisters": "0.0",
+      "email": "prakash172001@gmail.com",
+      "is_new": true
     },
     {
       "name": "PREM KUMAR G",
@@ -13051,6 +13393,24 @@ const APP_DATA = {
       "sisters": "1.0",
       "email": "jsasikala16@gmail.com",
       "is_new": false
+    },
+    {
+      "name": "DHEEBANRAJ S",
+      "dob": "Jul 31, 1998",
+      "time_of_birth": "22:50:00",
+      "education": "Bs.Computer Science",
+      "job": "Supervisor",
+      "salary": "51000.0",
+      "height": "5.7",
+      "birth_rashi": "KADAGAM (CANCER)",
+      "birth_star": "AAILYAM",
+      "father_name": "D.SANTHERAJAN",
+      "mother_name": "S.KAMALA",
+      "living": "CUDDALORE",
+      "brothers": "",
+      "sisters": "1.0",
+      "email": "dheebanrajsdr12@gmail.com",
+      "is_new": true
     },
     {
       "name": "DEEPAK KUMARAN B",
@@ -13122,7 +13482,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "No",
       "email": "sanjairathinakumar1998@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "HARSHAVARDHAN J",
@@ -13140,7 +13500,7 @@ const APP_DATA = {
       "brothers": "Nil",
       "sisters": "01 Married",
       "email": "jinendiran@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "RAMKUMAR C",
@@ -13158,7 +13518,7 @@ const APP_DATA = {
       "brothers": "0.0",
       "sisters": "1.0",
       "email": "chakravarthiadhiraj@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "BARATH B",
@@ -13392,7 +13752,7 @@ const APP_DATA = {
       "brothers": "0.0",
       "sisters": "1.0",
       "email": "devakumar6975@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "PRAVEEN KUMAR V",
@@ -13428,7 +13788,7 @@ const APP_DATA = {
       "brothers": "",
       "sisters": "1.0",
       "email": "padmakumarnagarajan@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "ADITHAN P",
@@ -13446,7 +13806,7 @@ const APP_DATA = {
       "brothers": "0.0",
       "sisters": "1.0",
       "email": "padmavijayan65@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "RANJITH KUMAR S",
@@ -13521,6 +13881,60 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "CHAKKARAVARTHI S",
+      "dob": "Aug 11, 1999",
+      "time_of_birth": "06:00:00",
+      "education": "ITI",
+      "job": "Jewellery",
+      "salary": "20000.0",
+      "height": "172.0",
+      "birth_rashi": "KADAGAM (CANCER)",
+      "birth_star": "AAILYAM",
+      "father_name": "SRINIVASAN",
+      "mother_name": "UMARANI",
+      "living": "INDIA",
+      "brothers": "1.0",
+      "sisters": "0.0",
+      "email": "chakkaravarthis11@gmail.com",
+      "is_new": true
+    },
+    {
+      "name": "REVANTH B",
+      "dob": "Aug 17, 1999",
+      "time_of_birth": "18:30:00",
+      "education": "MBA Finance",
+      "job": "Tech Mahindra",
+      "salary": "",
+      "height": "6.1",
+      "birth_rashi": "THULAM (LIBRA)",
+      "birth_star": "SWATHI",
+      "father_name": "BABU P",
+      "mother_name": "SARASA B",
+      "living": "CHENNAI",
+      "brothers": "1 elder brother",
+      "sisters": "Nil",
+      "email": "gokulsharma38@yahoo.com",
+      "is_new": true
+    },
+    {
+      "name": "VIMAL J",
+      "dob": "Aug 26, 1999",
+      "time_of_birth": "13:15:00",
+      "education": "B.com/MBA",
+      "job": "Senior process Associate Firstsource solutions ltd Navallur Chennai",
+      "salary": "35000.0",
+      "height": "178.0",
+      "birth_rashi": "KUMBAM (AQUARIUS)",
+      "birth_star": "AVITTAM",
+      "father_name": "K. JAISANKAR",
+      "mother_name": "J. SANTHI",
+      "living": "KOLATHUR CHENNAI",
+      "brothers": "NA",
+      "sisters": "1 Married",
+      "email": "vimaljain.sankar@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "NANDHA KUMAR A",
       "dob": "Sep 16, 1999",
       "time_of_birth": "02:30:00",
@@ -13554,7 +13968,7 @@ const APP_DATA = {
       "brothers": "",
       "sisters": "",
       "email": "nirmalkumar1999vp@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "JEEVENDIRAN M B",
@@ -13629,6 +14043,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "BHARATH KUMAR.S",
+      "dob": "Nov 3, 1999",
+      "time_of_birth": "16:55:00",
+      "education": "Bachelor of Technology, Biotechnology",
+      "job": "Assistant Manager at EY - Bangalore",
+      "salary": "108000.0",
+      "height": "170 cm",
+      "birth_rashi": "SIMMAM (LEO)",
+      "birth_star": "POORAM",
+      "father_name": "R.SARAVANAN",
+      "mother_name": "S.JAYACHITRA",
+      "living": "CHENNAI",
+      "brothers": "1.0",
+      "sisters": "NA",
+      "email": "Saravananraju07@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "DEEPCHARRAN N",
       "dob": "Nov 8, 1999",
       "time_of_birth": "16:29:00",
@@ -13662,7 +14094,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "0.0",
       "email": "aswinwin94@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "DIKSHITH A",
@@ -13705,9 +14137,9 @@ const APP_DATA = {
       "dob": "Feb 5, 2000",
       "time_of_birth": "06:10:00",
       "education": "Diploma electrical electronics engineering",
-      "job": "Dinamalar daily Tamil - Assistant manager",
-      "salary": "30000.0",
-      "height": "159.0",
+      "job": "Assistant Manager The Hindu",
+      "salary": "6.5 lakh per annum",
+      "height": "172.0",
       "birth_rashi": "MAGARAM (CAPRICORN)",
       "birth_star": "THIRUVONAM",
       "father_name": "JAYAPRAKASH",
@@ -13755,6 +14187,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "GUNASEELAN P",
+      "dob": "May 25, 2000",
+      "time_of_birth": "20:28:00",
+      "education": "M. SC B. ED",
+      "job": "PRINCIPAL AT PRIMARY SCHOOL",
+      "salary": "-",
+      "height": "178cm",
+      "birth_rashi": "KUMBAM (AQUARIUS)",
+      "birth_star": "AVITTAM",
+      "father_name": "PRABAKARAN H",
+      "mother_name": "KALPANA P",
+      "living": "R KUNNATHUR POLUR",
+      "brothers": "0.0",
+      "sisters": "0.0",
+      "email": "pgunaseelanjain@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "NIRMALCHAND I",
       "dob": "Jun 25, 2000",
       "time_of_birth": "05:00:00",
@@ -13795,8 +14245,8 @@ const APP_DATA = {
       "dob": "Jun 28, 2000",
       "time_of_birth": "10:30:00",
       "education": "Bsc",
-      "job": "Shop owner",
-      "salary": "200000.0",
+      "job": "Shop owner + own house rent",
+      "salary": "2+1 = 3 lakhs per month",
       "height": "170.0",
       "birth_rashi": "MESHAM (ARIES)",
       "birth_star": "BHARANI",
@@ -13806,6 +14256,24 @@ const APP_DATA = {
       "brothers": "No",
       "sisters": "1.0",
       "email": "baranijibarani28@gmail.com",
+      "is_new": false
+    },
+    {
+      "name": "PRASATH J",
+      "dob": "Jun 28, 2000",
+      "time_of_birth": "05:30:00",
+      "education": "D.E.E.E",
+      "job": "Amazon own hub agency",
+      "salary": "50k per month",
+      "height": "5.12",
+      "birth_rashi": "DHANUSHU (SAGITTARIUS)",
+      "birth_star": "MOOLAM",
+      "father_name": "J JEEVARAJAN",
+      "mother_name": "J PRIYA MITHRA",
+      "living": "VANDAVASI",
+      "brothers": "1.0",
+      "sisters": "0.0",
+      "email": "preamvijay893@gmail.com",
       "is_new": true
     },
     {
@@ -13824,7 +14292,7 @@ const APP_DATA = {
       "brothers": "-",
       "sisters": "1.0",
       "email": "adhithya7vasupal@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "APPANDAIRAAJ K (ALIAS : MANOJ )",
@@ -13842,7 +14310,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "Nil",
       "email": "gbr58000@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "AHREHANTH SAGAR G",
@@ -13863,6 +14331,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "JAGADEESHAN G",
+      "dob": "Sep 10, 2000",
+      "time_of_birth": "04:15:00",
+      "education": "B.A,B.PED,M.PED",
+      "job": "Physical Education Teacher",
+      "salary": "5LPA",
+      "height": "5' 11",
+      "birth_rashi": "MAGARAM (CAPRICORN)",
+      "birth_star": "UTTHIRADAM",
+      "father_name": "J.GUNASEKARAN",
+      "mother_name": "G.SASIKALA",
+      "living": "PUZHAL, CHENNAI",
+      "brothers": "1 Younger Brother",
+      "sisters": "Nil",
+      "email": "sasiguna2781@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "SHANTHILAL S",
       "dob": "Oct 11, 2000",
       "time_of_birth": "15:27:00",
@@ -13881,6 +14367,24 @@ const APP_DATA = {
       "is_new": false
     },
     {
+      "name": "SHANTHILAL S",
+      "dob": "Oct 11, 2000",
+      "time_of_birth": "15:27:00",
+      "education": "B.A. LLB (Honours)",
+      "job": "Advocate",
+      "salary": "50000.0",
+      "height": "183 CM",
+      "birth_rashi": "KANNI (VIRGO)",
+      "birth_star": "POORATATHI",
+      "father_name": "SUBASH JAIN A",
+      "mother_name": "PADMA J",
+      "living": "PUZHAL",
+      "brothers": "Nil",
+      "sisters": "Nil",
+      "email": "asjain5671@gmail.com",
+      "is_new": true
+    },
+    {
       "name": "ASWIN S",
       "dob": "Oct 14, 2000",
       "time_of_birth": "22:10:00",
@@ -13896,7 +14400,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "0.0",
       "email": "sanjudharanendiran@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "P VASANTH KUMAR",
@@ -13914,7 +14418,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "",
       "email": "p.dineshkumar3198@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "KISHORE M",
@@ -13932,7 +14436,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "",
       "email": "sridevimohandass@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "HARISH A",
@@ -14112,7 +14616,7 @@ const APP_DATA = {
       "brothers": "1.0",
       "sisters": "0.0",
       "email": "surendradass17@gmail.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "name": "HARISH S S",
@@ -14130,6 +14634,24 @@ const APP_DATA = {
       "brothers": "One younger brother",
       "sisters": "No",
       "email": "sanmadhiindra@gmail",
+      "is_new": false
+    },
+    {
+      "name": "NIRMAL P JAIN",
+      "dob": "Jan 26, 2003",
+      "time_of_birth": "11:30:00",
+      "education": "BBA (GENERAL)",
+      "job": "BUSINESS",
+      "salary": "50000.0",
+      "height": "5.5\"",
+      "birth_rashi": "VIRUCHAGAM (SCORPIO)",
+      "birth_star": "ANUSHAM",
+      "father_name": "N .PAVAN KUMAR",
+      "mother_name": "P.MANORAMA",
+      "living": "CHENNAI",
+      "brothers": "1.0",
+      "sisters": "1.0",
+      "email": "nirmalkumarjain9009@gmail.com",
       "is_new": true
     }
   ],

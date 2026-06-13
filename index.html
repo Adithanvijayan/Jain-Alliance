@@ -60,6 +60,19 @@
     </button>
   </div>
 
+  <!-- Sort Bar -->
+  <div class="sort-bar" id="sort-bar">
+    <span class="sort-label">Sort by:</span>
+    <div id="sort-dropdown-wrap"><!-- populated by JS --></div>
+    <button class="sort-dir-btn" id="sort-dir-btn" style="display:none;" title="Toggle sort direction">
+      <svg id="sort-dir-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15"><path d="M12 5v14M5 12l7-7 7 7"/></svg>
+    </button>
+    <button class="sort-clear-btn" id="sort-clear-btn" style="display:none;" title="Clear sort">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="12" height="12"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      Clear
+    </button>
+  </div>
+
   <!-- Cards Grid -->
   <main class="cards-grid" id="cards-grid">
     <!-- Cards rendered by JS -->
